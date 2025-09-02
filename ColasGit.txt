@@ -1,0 +1,65 @@
+📌 Configuração inicial
+
+git config --global user.name "Seu Nome" → define seu nome de usuário global.
+
+git config --global user.email "seuemail@email.com" → define seu e-mail global.
+
+git config --list → mostra as configurações atuais.
+
+📌 Fluxo básico
+
+git init → inicia um novo repositório Git na pasta atual.
+
+git clone <url> → clona (baixa) um repositório remoto para sua máquina.
+
+git status → mostra o estado dos arquivos (modificados, novos, não rastreados).
+
+git add <arquivo> → adiciona um arquivo específico à "staging area".
+
+git add . → adiciona todos os arquivos modificados à "staging area".
+
+git commit -m "mensagem" → salva as alterações no histórico com uma mensagem.
+
+git log → mostra o histórico de commits.
+
+git diff → mostra as diferenças entre arquivos modificados e o último commit.
+
+📌 Trabalhando com branches
+
+git branch → lista os branches existentes.
+
+git branch <nome> → cria um novo branch.
+
+git checkout <nome> → muda para o branch indicado.
+
+git checkout -b <nome> → cria e muda para um branch novo.
+
+git merge <branch> → mescla um branch ao atual.
+
+git branch -d <nome> → deleta um branch.
+
+📌 Repositório remoto
+
+git remote -v → lista os repositórios remotos configurados.
+
+git remote add origin <url> → conecta o repositório local ao remoto.
+
+git push origin <branch> → envia commits para o repositório remoto.
+
+git push -u origin <branch> → envia e define como branch padrão.
+
+git pull → baixa as alterações do repositório remoto.
+
+git fetch → baixa referências do remoto sem mesclar.
+
+📌 Correções e reset
+
+git reset --hard <hash> → volta o repositório para um commit específico, descartando mudanças.
+
+git reset --soft <hash> → volta, mas mantém alterações na "staging area".
+
+git revert <hash> → desfaz um commit criando um novo.
+
+git stash → guarda temporariamente mudanças não commitadas.
+
+git stash pop → recupera as mudanças salvas.
