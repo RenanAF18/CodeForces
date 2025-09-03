@@ -1,0 +1,1 @@
+{"name":"Local: 2064A","url":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2064A.py","tests":[{"id":1756764858675,"input":"5\n5\n00110\n4\n1111\n3\n001\n5\n00000\n3\n101","output":"2\n1\n1\n0\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2064A.py","group":"local","local":true}

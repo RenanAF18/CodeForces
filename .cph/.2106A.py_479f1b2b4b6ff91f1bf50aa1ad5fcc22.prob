@@ -1,0 +1,1 @@
+{"name":"Local: 2106A","url":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2106A.py","tests":[{"id":1756673277885,"input":"5\n3\n101\n1\n1\n5\n00000\n2\n11\n3\n010","output":"5\n0\n5\n2\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2106A.py","group":"local","local":true}
