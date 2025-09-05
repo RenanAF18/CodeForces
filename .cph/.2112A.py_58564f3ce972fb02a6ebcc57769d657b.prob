@@ -1,0 +1,1 @@
+{"name":"Local: 2112A","url":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2112A.py","tests":[{"id":1756763841546,"input":"3\n1 3 4\n5 3 1\n3 1 5","output":"YES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\renan\\OneDrive\\Documentos\\AA\\CodeForces\\2112A.py","group":"local","local":true}
