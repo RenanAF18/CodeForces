@@ -1,0 +1,10 @@
+# Competitive Programming Helper (CPH)
+.cph/
+*.prob
+
+# Saída do compilador g++
+a.exe
+a.out
+
+# VSCode
+.vscode/
