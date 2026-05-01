@@ -3,8 +3,9 @@
 *.prob
 
 # Saída do compilador g++
-a.exe
-a.out
+*.exe
+*.out
+*.bin
 
 # VSCode
 .vscode/
