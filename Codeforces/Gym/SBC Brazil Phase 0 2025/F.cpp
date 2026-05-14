@@ -11,14 +11,9 @@ int main(){
 
     cin.tie(0)->sync_with_stdio(0);
     
-    set<ll> v;
-
-    for(int i = 0; i < 10; i++){
-        int x; cin >> x;
-        v.insert(x);
-    }
-
-    cout << 4 - (int)v.size() << "\n";
+    int n; cin >> n;
     
     return 0;
 }
+
+//bora pae

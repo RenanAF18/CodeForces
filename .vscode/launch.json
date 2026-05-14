@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/renan/CodeForces/Contests/Div4/1873",
-      "program": "c:/Users/renan/CodeForces/Contests/Div4/1873/build/Debug/outDebug",
+      "cwd": "c:/Users/renan/CodeForces/Codeforces/cpp",
+      "program": "c:/Users/renan/CodeForces/Codeforces/cpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -11,23 +11,21 @@ int main(){
 
     cin.tie(0)->sync_with_stdio(0);
     
-    int n, k; cin >> n >> k;
-    vector<pii> v(n);
-
+    int n; cin >> n;
+    string s, t; 
+    cin >> s;
+    cin >> t;
+    
+    ll x = 0, y = 0;
     for(int i = 0; i < n; i++){
-        cin >> v[i].first;
-        cin >> v[i].second;
+        if(s[i] == '*') x++;
+        if(t[i] == '*') y++;
     }
 
-    sort(v.begin(), v.end());
+    float resp = 1-  (double)y/x;
+    cout  << fixed << setprecision(2) << resp;
 
-    rep(i, 0, n){
-        if(v[i].first <= k) k += v[i].second;
-        else break;
-    }    
-
-    cout << k;
-
-    
     return 0;
 }
+
+//bora pae
