@@ -21,7 +21,7 @@ const int MAXN = 2e5 + 5;
 int n, q;
 
 ll val[MAXN];
-ll flat[MAXN];
+ll flat[2 * MAXN];
 
 vector<int> adj[MAXN];
 
@@ -46,7 +46,7 @@ struct seg_tree {
     int n;
     vector<node> tree;
 
-    seg_tree(int n) : n(n), tree(n * 4) {}
+    seg_tree(int n) : n(n), tree(n * 8) {}
 
     inline int left(int id) {
         return (id << 1);
@@ -114,6 +114,7 @@ void dfs(int u, int p) {
         dfs(v, u);
     }
     tout[u] = timer - 1;
+    flat[timer++] = -flat[tin[u]];
 }
 
 void solve_tc() {
@@ -132,7 +133,7 @@ void solve_tc() {
 
     seg_tree<ll> seg(n);
 
-    seg.build(1, 0, n - 1);
+    seg.build(1, 0, 2*n - 1);
 
     while(q--) {
         int op;
@@ -143,12 +144,13 @@ void solve_tc() {
             ll x;
             cin >> s >> x;
             val[s] = x;
-            seg.set(1, 0, n - 1, tin[s], x);
+            seg.set(1, 0, 2*n - 1, tin[s], x);
+            seg.set(1, 0, 2*n - 1, tout[s]+1, -x);
         }
         else {
             int s;
             cin >> s;
-            cout << seg.query(1, 0, n - 1, tin[s], tout[s]).x << endl;
+            cout << seg.query(1, 0, 2*n - 1, 0, tin[s]).x << endl;
         }
     }
 }
