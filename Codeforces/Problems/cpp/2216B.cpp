@@ -2,52 +2,55 @@
 using namespace std;
 
 typedef long long ll;
-typedef pair<ll,ll> pii;
+typedef pair<ll, ll> pii;
 typedef vector<ll> vii;
 
-void solve_tc(){
+void solve_tc() {
 
-    ll t, h, u; cin >> t >> h >> u;
-    ll resp = 0;
+  ll t, h, u;
+  cin >> t >> h >> u;
+  ll resp = 0;
 
-    ll auxt = min(t, u);
-    
-    resp += 4 * auxt;
-    t -= auxt;
-    u -= auxt;
+  ll auxt = min(t, u);
 
-    if(u){
-        resp += 3 * u;
-        resp += 3 * h;
-    }else{
-        int minh = min(t/2, h);
-        resp += 7 * minh;
-        t -= 2 * minh;
-        h -= minh;
+  resp += 4 * auxt;
+  t -= auxt;
+  u -= auxt;
 
-        if(t){
-            if(h){
-                resp += 5;
-                t--;
-                h--;
-            }
-        }
+  if (u) {
+    resp += 3 * u;
+    resp += 3 * h;
+  } else {
+    ll minh = min(t / 2, h);
+    resp += 7 * minh;
+    t -= 2 * minh;
+    h -= minh;
 
-        resp += 2 * t + 1;
-        resp += 3 * h;
+    if (t) {
+      if (h) {
+        resp += 5;
+        t--;
+        h--;
+      }
     }
 
-    cout << resp << "\n";
+    if (t)
+      resp += 2 * t + 1;
+    resp += 3 * h;
+  }
+
+  cout << resp << "\n";
 }
 
-int main(){
+int main() {
 
-    cin.tie(0)->sync_with_stdio(0);
-    
-    int tc;
-    cin >> tc;
+  cin.tie(0)->sync_with_stdio(0);
 
-    while(tc--) solve_tc();
-    
-    return 0;
+  int tc;
+  cin >> tc;
+
+  while (tc--)
+    solve_tc();
+
+  return 0;
 }
